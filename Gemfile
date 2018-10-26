@@ -5,9 +5,10 @@ gem "hashie"
 gem "octokit", "~> 2.0"
 gem "awesome_print", git: "git@github.com:awesome-print/awesome_print.git"
 
-group :test do
+group :test |"test"| do
   gem "rspec"
 end
+#expect(@gemfile_text =~ /group (:test|['"]test['"]) do/).not_to eq(nil)
 
 group :development do
 gem "pry"
