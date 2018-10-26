@@ -8,6 +8,6 @@ gem "awesome_print", git: "git@github.com:awesome-print/awesome_print.git"
 gem "pry", :group => :development
 #expect(@gemfile_text =~ /group (:test|['"]test['"]) do/).not_to eq(nil)
 
-#group :development do
-#gem "pry"
-#end
+group :test do
+  gem "rspec"
+end
